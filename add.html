@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card mx-auto" style="max-width: 500px;">
+    <div class="card-body">
+        <h2 class="card-title text-center">Add New Entry</h2>
+        <form action="{{ url_for('add_entry') }}" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" name="title" id="title" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Content</label>
+                <textarea name="content" id="content" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Add Entry</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
