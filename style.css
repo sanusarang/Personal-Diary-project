@@ -1,0 +1,38 @@
+body {
+    background: url("C:\personaldiary\static\personaldiary.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(252 218 218) !important;
+}
+
+h1, h2, .navbar-brand {
+    color: #333;
+}
+
+.card {
+    background-color: rgb(255, 236, 236);
+    color: #333;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: rgba(244, 197, 167, 0.936); /* Semi-transparent navbar */
+}
+
+.navbar-brand, .btn {
+    color: #0f0101 !important;
+    font-weight: bold;
+}
